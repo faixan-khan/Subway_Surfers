@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="./gl-matrix.js"></script>
+  <script src="./tracks.js"></script>
+  <script src="mousetrap.js"></script>
+  <script src="./texture.js"></script>
+  <script src="./barier.js  "></script>
+  <script src="./trains.js"></script>
+  <script src="./sidewall.js"></script>
+  <script src="./leftwall.js"></script>
+  <script src="./barricades.js"></script>
+  <script src="./jetpack.js"></script>
+  <script src="./player.js"></script>
+  <script src="./player_2.js"></script>
+  <script src="./coin.js"></script>
+  <script src="./grass.js"></script>
+  <script src="./police.js"></script>
+  <script src="./jumper.js"></script>
+  <script src="./dog.js"></script>
+  <script src="./boost.js "></script>
+  <script src="./cube.js"></script>
+  <audio src = './sounds/crash.wav' id = "crash"></audio>
+  <audio src = './sounds/coin.wav' id = "coin"></audio>
+  <audio src = './sounds/polc.wav' id = "polc"></audio>
+  <audio src = './sounds/prize.wav' id = "prize"></audio>
+  <audio src = './sounds/theme.mp3' id = "theme" loop></audio>
+    <title>WebGL Demo</title>
+    <link rel="stylesheet" href="../webgl.css" type="text/css">
+  </head>
+
+  <body style='margin:0px' onload='main()'></body>
+  <canvas id='your_canvas'
+	style='position: absolute;'></canvas>
+	<div style='position: absolute; background-color: rgba(0,0,0,0.5); width: 500px; height: 300px; margin-top: 150px; margin-left: 400px' id='start'>
+		<div style="color: rgb(0,0,170); text-align: center; margin-top: 10%; font-family: Arial; font-size: xx-large; transform: scale(2,1.5);"> Subway <br/> Surfers</div>
+		<br>
+		<br>
+		<br>
+		<div style="background-color: rgba(0,0,255,0.7); width: 80px; height: 80px; margin-left: 45%" onclick="startGame()"><img src='play.png' width=100% height=100% /></div>
+
+	</div>
+
+	
+
+	<div style='position: absolute; background-color: rgba(0,0,0,0.6); width: 300px; height: 100px;visibility: hidden;' id="scoreDiv">
+		<div style="color: rgb(255,255,255); text-align: center; margin-top: 10%; font-family: Open Sans; font-size: xx-large;" id='score'></div>
+	</div>
+
+	<div style='position: absolute; background-color: rgba(0,0,0,0.6); width: 300px; height: 100px;visibility: hidden; margin-left: 850px' id="levelDiv">
+		<div style="color: rgb(255,255,255); text-align: center; margin-top: 10%; font-family: Open Sans; font-size: xx-large;" id="level"></div>
+	</div>
+
+	<div style='position: absolute; background-color: rgba(0,0,0,0.6); width: 400px; height: 100px;visibility: hidden; margin-left: 500px; margin-top: 250px' id="pauseDiv">
+		<div style="color: rgb(255,255,255); text-align: center; margin-top: 10%; font-family: Open Sans; font-size: xx-large; transform: scale(2,1.5);">PAUSED</div>
+	</div>
+
+</body>
+</html>
