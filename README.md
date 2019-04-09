@@ -19,7 +19,7 @@
     Sound
     Texture,lightining
     
-  ![alt tag](subway_surf.png)
+  ![alt tag](new.jpg)
     
 ##  Controls
       Space: jump
